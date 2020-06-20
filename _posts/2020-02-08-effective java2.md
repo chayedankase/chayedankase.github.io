@@ -14,7 +14,7 @@ keywords: effective java
 
 ​		对于这样的类，应该用哪种构造器或者静态工厂来编写呢？程序员一向习惯采用重叠构造器（ telescoping constructor）模式，在这种模式下，提供的第一个构造器只有必要的参 数，第二个构造器有一个可选参数，第三个构造器有两个可选参数，依此类推，最后一个构造器包含所有可选的参数。下面有个示例，为了简单起见，它只显示四个可选域：
 
-```JAVA
+```java
 //Telescoping constructor pattern - does not scale well! 
 public class NutritionFacts { 
     Private final int servingSize; 	// (ml) 			required 
@@ -59,7 +59,7 @@ NutritionFacts cocaCola = new NutritionFacts(240, 8, 100, 0, 35 , 27);
 
 ​		遇到许多可选的构造器参数的时候，还有第二种代替办法，即 JavaBeans 模式，在这 种模式下，先调用一个无参构造器来创建对象，然后再调用 setter 方法来设置每个必要的参数，以及每个相关的可选参数：
 
-```JAVA
+```java
 // JavaBeans Pattern - allows inconsistency, mandates mutability 
 public class NutrftionFacts { 
     // Parameters initialized to default values (if any] 

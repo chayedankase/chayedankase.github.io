@@ -134,7 +134,7 @@ keywords: Elastic Search
 > kill  进程号
 > ```
 >
-> ![image-20200120155059654](H:\笔记\imgs\elasticStack\image-20200120155059654.png)
+> ![image-20200120155059654]({{ site.url }}\笔记\imgs\elasticStack\image-20200120155059654.png)
 
 #### 5. 安装elasticSearch-head工具
 

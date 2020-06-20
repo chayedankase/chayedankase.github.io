@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://chayedankase.github.io/
+url: http://chayedankase.github.io
 date_format: "ordinal"
 title: 茶叶蛋
 subtitle: "茶叶蛋笔记"
